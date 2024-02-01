@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'DriftLens'
-copyright = '2024, Salvatore'
+copyright = '2024, Salvatore Greco'
 author = 'Salvatore'
 
 release = '0.1'
