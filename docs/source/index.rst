@@ -1,4 +1,4 @@
-DriftLens documentation!
+DriftLens documentation
 ===================================
 
 *DriftLens* is an unsupervised drift detection framework for deep learning classifiers on unstructured data.
