@@ -6,29 +6,29 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use DriftLens, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   (.venv) $ pip install drift-lens
 
-Creating recipes
+Compute baseline
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
+To estimate the baseline,
+you can use the ``driftlens.baseline()`` class:
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+.. autoclass:: lumache.get_random_ingredients
 
-.. autoexception:: lumache.InvalidKindError
+The ``pc`` parameter should be either ``"75"``, ``"100"``,
+or ``"150"``. 
 
 For example:
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+>>> import driftlens
+>>> driftlens.Baseline()
 
+
+Compute threshold
+----------------
